@@ -1,11 +1,11 @@
 import { useEffect } from "react";
-import UseFormValidation from "../../utils/useFormValidation";
+import useFormValidation from "../../utils/useFormValidation";
 import PopupWithForm from "../popupWithForm/PopupWithForm";
 
 
 export default function AddPlacePopup({onClose, isOpen , onAddPlace}) {
 
-    const {handleChange, values, errors, isValid, isInputValid, formReset} = UseFormValidation()
+    const {handleChange, values, errors, isValid, isInputValid, formReset} = useFormValidation()
 
     function resetOnClose() {
         onClose()

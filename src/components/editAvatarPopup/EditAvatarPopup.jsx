@@ -1,11 +1,11 @@
 import { useEffect, useRef } from "react"
-import UseFormValidation from "../../utils/useFormValidation"
+import useFormValidation from "../../utils/useFormValidation"
 import PopupWithForm from "../popupWithForm/PopupWithForm"
 
 
 export default function EditAvatarPopup({isOpen, onClose, onUpdateAvatar}) {
     const inputData = useRef()
-    const {handleChange, values, errors, isValid, isInputValid, formReset} = UseFormValidation()
+    const {handleChange, values, errors, isValid, isInputValid, formReset} = useFormValidation()
 
     function resetOnClose() {
         onClose()

@@ -19,7 +19,7 @@ export default function Login ({onLogin}) {
           .then(() => navigate('/'))
           .catch(console.error)
     }
-    
+
     return (
         <div className="login">
             <h2 className="login__title">Вход</h2>
@@ -28,7 +28,7 @@ export default function Login ({onLogin}) {
             onSubmit={handleLogin}
             >
                 <input 
-                className="login__input__email" 
+                className="login__input_email" 
                 placeholder="Email"
                 type="email"
                 value={email}
@@ -37,7 +37,7 @@ export default function Login ({onLogin}) {
                 >
                 </input>
                 <input 
-                className="login__input__password" 
+                className="login__input_password" 
                 placeholder="Пароль"
                 type="password"
                 value={password}

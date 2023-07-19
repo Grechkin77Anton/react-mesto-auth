@@ -34,7 +34,7 @@ export default function Register ({onRegister, setIsError}) {
             onSubmit={handleRegister}
             >
                 <input 
-                className="registration__input__email" 
+                className="registration__input_email" 
                 placeholder="Email"
                 type="email"
                 value={email}
@@ -43,7 +43,7 @@ export default function Register ({onRegister, setIsError}) {
                 >
                 </input>
                 <input 
-                className="registration__input__password" 
+                className="registration__input_password" 
                 placeholder="Пароль"
                 type="password"
                 value={password}
