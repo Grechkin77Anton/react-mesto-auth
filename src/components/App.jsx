@@ -54,7 +54,7 @@ function App() {
         // console.log(res)
       }
     })
-    .catch(console.err)
+    .catch(console.error)
   };
 
   useEffect(() => {
