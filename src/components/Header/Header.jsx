@@ -2,7 +2,7 @@ import logo from "../../images/logo-white.png";
 import { Link } from "react-router-dom";
 
 export default function Header({ name, emailUser, onSingOut , loggedIn}) {
-  console.log(loggedIn)
+  // console.log(loggedIn)
 
   
 

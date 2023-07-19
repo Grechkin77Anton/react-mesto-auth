@@ -77,7 +77,8 @@ function App() {
         setLoggedIn(true);
         setEmailUser(email);
       }
-    });
+    })
+    .catch(console.error)
   };
 
   const onRegister = useCallback(({ password, email }) => {
@@ -85,7 +86,7 @@ function App() {
       .then((res) => {
         return res;
       })
-      .then(() => setIsSuccess(true));
+      .then(() => setIsSuccess(true))
   }, []);
 
   function closeAllPopups() {
